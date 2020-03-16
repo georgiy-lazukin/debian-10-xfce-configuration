@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+# xsettings
+sudo sed -i \
+  -e 's/property name="ThemeName" type="string" value="Xfce"/property name="ThemeName" type="string" value="Greybird"/' \
+  -e 's/property name="IconThemeName" type="string" value="Tango"/property name="IconThemeName" type="string" value="Papirus"/' \
+  /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+
+# xfwm
+# /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/*.xml
+
+# lightdm
+tee /etc/lightdm/lightdm-gtk-greeter.conf <<EOF
+[greeter]
+theme-name = Greybird
+icon-theme-name = Papirus
+EOF
+

@@ -1,0 +1,69 @@
+#!/bin/bash
+
+set -e
+
+echo 'https://live-team.pages.debian.net/live-manual/html/live-manual/customizing-package-installation.en.html'
+
+
+# Skeleton
+echo 'Add archives, packages, hooks ...'
+
+mkdir -p ./config/{archives,'includes.chroot','hooks','packages.chroot','package-lists'}
+cp -a ./skel/archives/. ./config/archives/
+cp -a ./skel/hooks/. ./config/hooks/
+cp -a ./skel/includes.chroot/. ./config/includes.chroot/
+cp -a ./skel/package-lists/. ./config/package-lists/
+
+
+# Download
+echo 'Download packages...'
+echo 'Packages must be named in the prescribed way. One simple way to do this is to use dpkg-name'
+
+# download google-chrome
+url="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+filename="config/packages.chroot/google-chrome-stable_current_amd64.deb"
+[[ ! -f $filename ]] && \
+  wget $url -O $filename
+
+# download slack
+url="https://downloads.slack-edge.com/linux_releases/slack-desktop-4.3.2-amd64.deb"
+filename="config/packages.chroot/slack-desktop_4.3.2_amd64.deb"
+[[ ! -f $filename ]] && \
+  wget $url -O $filename
+
+# download zoom
+url="https://d11yldzmag5yn.cloudfront.net/prod/3.5.361976.0301/zoom_amd64.deb"
+filename="config/packages.chroot/zoom_amd64.deb"
+[[ ! -f $filename ]] && \
+  wget $url -O $filename
+
+
+# Config
+lb config noauto \
+  --binary-images iso-hybrid \
+  --mode debian \
+  --architectures amd64 \
+  --interactive shell \
+  --linux-flavours amd64 \
+  --distribution buster \
+  --archive-areas "main contrib non-free" \
+  --updates true \
+  --security true \
+  --cache true \
+  --apt-recommends true \
+  --debian-installer live \
+  --debian-installer-gui true \
+  --win32-loader false \
+  --iso-application green-debian \
+  --iso-volume green-debian \
+  --debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
+  --bootappend-live "\
+      boot=live components \
+      username=green \
+      locales=en_US.UTF-8,ru_RU.UTF-8 \
+      keyboard-layouts=en,ru \
+      utc=no \
+      timezone=Europe/Moscow \
+      live-config.user-default-groups=audio cdrom dip floppy video plugdev netdev powerdev scanner bluetooth fuse docker vboxusers \
+  "\
+"${@}"

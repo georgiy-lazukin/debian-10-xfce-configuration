@@ -1,0 +1,141 @@
+task-xfce-desktop
+#xfce4
+#xfce4-goodies
+
+# basic
+sudo
+bash-completion
+nano
+curl
+wget
+rsync
+git
+mc
+pv
+ccze
+jq
+htop
+nmap
+tcpdump
+iftop
+screenfetch
+wmctrl
+
+# apt
+apt-transport-https
+software-properties-common
+ca-certificates
+
+# synaptic
+synaptic
+apt-xapian-index
+
+#drivers
+intel-microcode
+firmware-misc-nonfree
+#amd64-microcode
+
+# d-bus
+policykit-1-gnome
+
+# synaptics touchpad
+xserver-xorg-input-synaptics
+
+# thunar
+thunar-archive-plugin
+
+# tools
+xfce4-panel-dev
+xfce4-taskmanager
+xfce4-power-manager
+xfce4-terminal
+xfce4-xkb-plugin
+xfce4-screenshooter
+xfce4-clipman
+lightdm-gtk-greeter-settings
+debian-keyring
+network-manager-gnome
+network-manager
+wireless-tools
+pavucontrol
+p7zip-full
+p7zip
+unzip
+xarchiver
+gparted
+#i3lock
+
+# fonts
+fonts-dejavu
+fonts-dejavu-extra
+fonts-droid-fallback
+fonts-liberation
+fonts-noto-mono
+fonts-opensymbol
+ttf-mscorefonts-installer
+ttf-dejavu-core
+ttf-bitstream-vera
+ttf-dejavu
+ttf-dejavu-extra
+fonts-freefont-ttf
+
+# appearance
+papirus-icon-theme
+greybird-gtk-theme
+plank
+
+# spell
+aspell
+aspell-en
+aspell-ru
+
+# libreoffice
+mythes-en-us
+mythes-ru
+hunspell
+hunspell-en-us
+hunspell-ru
+libreoffice-l10n-ru
+libreoffice-writer
+libreoffice-calc
+libreoffice-impress
+
+# builder
+build-essential
+
+# printer
+printer-driver-all
+
+# accessories
+mousepad
+gnome-calculator
+
+# development
+meld
+geany
+
+# i10n
+firefox-esr-l10n-ru
+
+# network
+transmission-gtk
+netcat
+openvpn
+ufw
+
+# display
+redshift
+
+# multimedia
+vlc
+
+# graphics
+ristretto
+flameshot
+simple-scan
+
+# games
+dosbox
+
+# tools
+live-build
