@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+apt -y --purge autoremove \
+  orca \
+  zathura
+
+rm -fr \
+  /usr/lib/python3/dist-packages/orca/ \
+  /usr/lib/python3/dist-packages/louis \
+  /usr/lib/python3/dist-packages/pyatspi \
+  /usr/lib/python3/dist-packages/speechd_config \
+  /usr/lib/python3/dist-packages/speechd \
+  /usr/lib/python3/dist-packages/xdg
