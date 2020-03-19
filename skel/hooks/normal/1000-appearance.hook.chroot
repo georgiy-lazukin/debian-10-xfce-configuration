@@ -3,7 +3,7 @@
 set -e
 
 # xsettings
-sudo sed -i \
+sed -i \
   -e 's/property name="ThemeName" type="string" value="Xfce"/property name="ThemeName" type="string" value="Greybird"/' \
   -e 's/property name="IconThemeName" type="string" value="Tango"/property name="IconThemeName" type="string" value="Papirus"/' \
   /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml

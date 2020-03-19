@@ -123,6 +123,12 @@ netcat
 openvpn
 ufw
 
+# bluetooth
+bluetooth
+pulseaudio-module-bluetooth
+blueman
+bluez-firmware
+
 # display
 redshift
 
