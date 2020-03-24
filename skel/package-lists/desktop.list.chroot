@@ -54,8 +54,10 @@ xfce4-screenshooter
 xfce4-clipman
 lightdm-gtk-greeter-settings
 debian-keyring
-network-manager-gnome
 network-manager
+network-manager-gnome
+network-manager-openvpn
+network-manager-openvpn-gnome
 wireless-tools
 pavucontrol
 p7zip-full
