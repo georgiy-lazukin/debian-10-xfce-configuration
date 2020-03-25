@@ -124,6 +124,9 @@ transmission-gtk
 netcat
 openvpn
 ufw
+gigolo
+gvfs-fuse
+gvfs-backends
 
 # bluetooth
 bluetooth
