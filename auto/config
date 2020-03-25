@@ -8,14 +8,18 @@ echo 'https://live-team.pages.debian.net/live-manual/html/live-manual/customizin
 # Skeleton
 echo 'Add archives, packages, hooks ...'
 
-mkdir -p ./config/{archives,'includes.chroot','hooks','packages.chroot','package-lists'}
+mkdir -p ./config/{archives,'includes.chroot','hooks','includes.binary','packages.chroot','package-lists'}
 cp -a ./skel/archives/. ./config/archives/
 cp -a ./skel/hooks/. ./config/hooks/
 cp -a ./skel/includes.chroot/. ./config/includes.chroot/
 cp -a ./skel/package-lists/. ./config/package-lists/
 
 
-# Download
+# Non-free firmware
+# Download http://gensho.ftp.acc.umu.se/cdimage/unofficial/non-free/firmware/buster/current/firmware.tar.gz and place into config/includes.binary/firmware.tar.gz
+
+
+# Download packages
 echo 'Download packages...'
 echo 'Packages must be named in the prescribed way. One simple way to do this is to use dpkg-name'
 
