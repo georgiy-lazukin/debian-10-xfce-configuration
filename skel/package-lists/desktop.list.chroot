@@ -86,6 +86,7 @@ fonts-freefont-ttf
 papirus-icon-theme
 greybird-gtk-theme
 plank
+qt5-style-plugins
 
 # spell
 aspell

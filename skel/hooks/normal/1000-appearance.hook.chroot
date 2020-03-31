@@ -18,3 +18,16 @@ theme-name = Greybird
 icon-theme-name = Papirus
 EOF
 
+# qt5
+cat << EOF | sudo tee /etc/environment
+#QT_QPA_PLATFORMTHEME=qt5ct
+QT_QPA_PLATFORMTHEME=gtk2
+#QT_STYLE_OVERRIDE=gtk2
+EOF
+
+# qt4
+cat << EOF | sudo tee /etc/xdg/Trolltech.conf
+[Qt]
+style=GTK+
+font="Noto Sans,10,-1,5,50,0,0,0,0,0"
+EOF
