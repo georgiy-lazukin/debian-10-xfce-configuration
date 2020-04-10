@@ -64,7 +64,7 @@ lb config noauto \
   --bootappend-live "\
       boot=live components \
       username=green \
-      locales=en_US.UTF-8,ru_RU.UTF-8 \
+      locales=en_GB.UTF-8,ru_RU.UTF-8 \
       keyboard-layouts=en,ru \
       utc=no \
       timezone=Europe/Moscow \
