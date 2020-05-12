@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+cat << EOF | tee /etc/NetworkManager/NetworkManager.conf
+
+[device]
+wifi.scan-rand-mac-address=no
+EOF
