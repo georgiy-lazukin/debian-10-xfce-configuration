@@ -126,6 +126,7 @@ transmission-gtk
 netcat
 openvpn
 ufw
+pppoeconf
 gigolo
 gvfs-fuse
 gvfs-backends
