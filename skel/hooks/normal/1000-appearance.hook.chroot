@@ -29,5 +29,5 @@ EOF
 cat << EOF | sudo tee /etc/xdg/Trolltech.conf
 [Qt]
 style=GTK+
-font="Noto Sans,10,-1,5,50,0,0,0,0,0"
+font="Noto Sans,11,-1,5,50,0,0,0,0,0"
 EOF
