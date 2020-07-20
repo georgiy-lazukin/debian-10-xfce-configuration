@@ -17,6 +17,8 @@ cp -a ./skel/package-lists/. ./config/package-lists/
 
 # Non-free firmware
 # Download http://gensho.ftp.acc.umu.se/cdimage/unofficial/non-free/firmware/buster/current/firmware.tar.gz and place into config/includes.binary/firmware.tar.gz
+mkdir -p config/includes.binary/firmware && rm -fr config/includes.binary/firmware/*
+wget -c http://gensho.ftp.acc.umu.se/cdimage/unofficial/non-free/firmware/buster/current/firmware.tar.gz -O - | sudo tar -xz -C config/includes.binary/firmware/
 
 
 # Download packages
@@ -30,13 +32,13 @@ filename="config/packages.chroot/google-chrome-stable_current_amd64.deb"
   wget $url -O $filename
 
 # download slack
-url="https://downloads.slack-edge.com/linux_releases/slack-desktop-4.3.2-amd64.deb"
-filename="config/packages.chroot/slack-desktop_4.3.2_amd64.deb"
+url="https://downloads.slack-edge.com/linux_releases/slack-desktop-4.7.0-amd64.deb"
+filename="config/packages.chroot/slack-desktop_4.7.0_amd64.deb"
 [[ ! -f $filename ]] && \
   wget $url -O $filename
 
 # download zoom
-url="https://d11yldzmag5yn.cloudfront.net/prod/3.5.361976.0301/zoom_amd64.deb"
+url="https://zoom.us/client/latest/zoom_amd64.deb"
 filename="config/packages.chroot/zoom_amd64.deb"
 [[ ! -f $filename ]] && \
   wget $url -O $filename
