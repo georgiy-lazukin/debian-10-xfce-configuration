@@ -43,6 +43,13 @@ filename="config/packages.chroot/zoom_amd64.deb"
 [[ ! -f $filename ]] && \
   wget $url -O $filename
 
+# download php-storm
+mkdir -p skel/includes.chroot/opt/PhpStorm
+url="https://download-cf.jetbrains.com/webide/PhpStorm-2020.1.3.tar.gz"
+filename="skel/includes.chroot/opt/PhpStorm/PhpStorm-2020.1.3.tar.gz"
+[[ ! -f $filename ]] && \
+  wget $url -O $filename
+
 
 # Config
 lb config noauto \
