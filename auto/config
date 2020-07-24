@@ -56,6 +56,13 @@ filename="config/packages.chroot/balena-etcher-electron_1.5.101_amd64.deb"
 [[ ! -f $filename ]] && \
   wget $url -O $filename
 
+# download postman
+url="https://dl.pstmn.io/download/latest/linux64"
+mkdir -p skel/includes.chroot/opt/Postman
+filename="skel/includes.chroot/opt/Postman/Postman-linux-x64.tar.gz"
+[[ ! -f $filename ]] && \
+  wget $url -O $filename
+
 
 # Config
 lb config noauto \
