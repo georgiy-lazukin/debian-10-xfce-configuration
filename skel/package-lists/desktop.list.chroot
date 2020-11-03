@@ -83,7 +83,7 @@ ttf-dejavu-extra
 fonts-freefont-ttf
 
 # appearance
-papirus-icon-theme
+#papirus-icon-theme
 greybird-gtk-theme
 plank
 qt5-style-plugins
