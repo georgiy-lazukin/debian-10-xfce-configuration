@@ -56,6 +56,12 @@ filename="config/packages.chroot/balena-etcher-electron_1.5.101_amd64.deb"
 [[ ! -f $filename ]] && \
   wget $url -O $filename
 
+# download teamviewer
+url="https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
+filename="config/packages.chroot/teamviewer_amd64.deb"
+[[ ! -f $filename ]] && \
+  wget $url -O $filename
+
 # download postman
 url="https://dl.pstmn.io/download/latest/linux64"
 mkdir -p skel/includes.chroot/opt/Postman
