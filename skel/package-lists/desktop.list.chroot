@@ -53,6 +53,7 @@ xfce4-xkb-plugin
 xfce4-screenshooter
 xfce4-clipman
 lightdm-gtk-greeter-settings
+menulibre
 debian-keyring
 network-manager
 network-manager-gnome
