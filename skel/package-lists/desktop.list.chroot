@@ -145,7 +145,8 @@ redshift
 vlc
 
 # graphics
-ristretto
+#ristretto
+nomacs
 flameshot
 simple-scan
 
