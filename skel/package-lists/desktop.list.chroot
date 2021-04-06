@@ -140,6 +140,7 @@ bluez-firmware
 
 # display
 redshift
+arandr
 
 # multimedia
 vlc
