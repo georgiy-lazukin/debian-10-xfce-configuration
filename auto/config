@@ -16,9 +16,8 @@ cp -a ./skel/package-lists/. ./config/package-lists/
 
 
 # Non-free firmware
-# Download http://gensho.ftp.acc.umu.se/cdimage/unofficial/non-free/firmware/buster/current/firmware.tar.gz and place into config/includes.binary/firmware.tar.gz
 mkdir -p config/includes.binary/firmware && rm -fr config/includes.binary/firmware/*
-wget -c http://gensho.ftp.acc.umu.se/cdimage/unofficial/non-free/firmware/buster/current/firmware.tar.gz -O - | sudo tar -xz -C config/includes.binary/firmware/
+wget -c https://cdimage.debian.org/cdimage/unofficial/non-free/firmware/buster/current/firmware.tar.gz -O - | sudo tar -xz -C config/includes.binary/firmware/
 
 
 # Download packages
