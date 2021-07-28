@@ -32,8 +32,8 @@ filename="config/packages.chroot/google-chrome-stable_current_amd64.deb"
   wget $url -O $filename
 
 # download slack
-url="https://downloads.slack-edge.com/linux_releases/slack-desktop-4.7.0-amd64.deb"
-filename="config/packages.chroot/slack-desktop_4.7.0_amd64.deb"
+url="https://downloads.slack-edge.com/linux_releases/slack-desktop-4.18.0-amd64.deb"
+filename="config/packages.chroot/slack-desktop_4.18.0_amd64.deb"
 [[ ! -f $filename ]] && \
   wget $url -O $filename
 
@@ -51,8 +51,8 @@ filename="skel/includes.chroot/opt/PhpStorm/PhpStorm-2020.2.tar.gz"
   wget $url -O $filename
 
 # download balena-etcher
-url="https://github.com/balena-io/etcher/releases/download/v1.5.101/balena-etcher-electron_1.5.101_amd64.deb"
-filename="config/packages.chroot/balena-etcher-electron_1.5.101_amd64.deb"
+url="https://github.com/balena-io/etcher/releases/download/v1.5.121/balena-etcher-electron_1.5.121_amd64.deb"
+filename="config/packages.chroot/balena-etcher-electron_1.5.121_amd64.deb"
 [[ ! -f $filename ]] && \
   wget $url -O $filename
 
