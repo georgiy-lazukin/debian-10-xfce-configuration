@@ -3,11 +3,11 @@
 set -e
 
 # apt-cache policy google-chrome-stable
-apt install google-chrome-stable=85.0.4183.121-1
-apt-mark hold google-chrome-stable
+#apt install google-chrome-stable=85.0.4183.121-1
+#apt-mark hold google-chrome-stable
 
 # apt-cache policy slack-desktop
-apt install slack-desktop=4.10.3
-apt-mark hold slack-desktop
+#apt install slack-desktop=4.10.3
+#apt-mark hold slack-desktop
 
 apt-mark showhold
