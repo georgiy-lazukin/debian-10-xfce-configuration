@@ -139,7 +139,7 @@ blueman
 bluez-firmware
 
 # display
-redshift
+#redshift
 arandr
 
 # multimedia
