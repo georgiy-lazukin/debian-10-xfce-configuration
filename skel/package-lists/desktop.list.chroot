@@ -85,6 +85,7 @@ fonts-freefont-ttf
 
 # appearance
 #papirus-icon-theme
+xfce4-appmenu-plugin
 greybird-gtk-theme
 plank
 qt5-style-plugins
